@@ -2,32 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(128, 128, 128, 0.066);
+  overflow-x: hidden;
+  width: 100vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes beat {
+  0%, 100%{
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+  
+.beat{
+  animation: beat 3s infinite;
+}
+
+.toggler{
+  display: none;
+}
+
+.skill-card p{
+  display: none;
+}
+
+.skill-card {
+  cursor: pointer;
+}
+
+.skill-card:hover img {
+  opacity: 0.3;
+}
+
+.skill-card:hover p{
+  display: inline;
+}
+
+@media(max-width:500px){
+  .nav-list{
+    display: none;
+  }
+  .toggler{
+    display: inline;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media(max-width:650px) {
+  .grid div{
+    height: 100px;
+  }
+  .intern{
+    flex-direction: column;
+    align-items: center;
+  }
+  .intern .card{
+    margin:1rem 0 1rem 0;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media(max-width:520px) {
+  .grid div{
+    height: 60px;
+  }
+  .grid{
+    grid-gap:5px;
+  }
+  .contact{
+    padding:1rem;
   }
 }
