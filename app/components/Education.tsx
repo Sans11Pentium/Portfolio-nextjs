@@ -14,7 +14,7 @@ const Education = () => {
                 <div className="card-body">
                   <div className="text-lg font-black">Class 10</div>
                   <time className="font-mono italic">2019 - 2020</time>
-                  <p>St. Mark's World School</p>
+                  <p>St. Mark&apos;s World School</p>
                   <p>94.8%</p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ const Education = () => {
                     <div className="card-body">
                     <div className="text-lg font-black">Class 12</div>
                     <time className="font-mono italic">2021 - 2022</time>
-                    <p>St. Mark's World School</p>
+                    <p>St. Mark&apos;s World School</p>
                     <p>97%</p>
                     </div>
                 </div>
