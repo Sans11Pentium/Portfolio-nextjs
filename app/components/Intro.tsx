@@ -10,7 +10,13 @@ const Intro = () => {
           <p className="text-teal-500 beat">&#10084;</p>
         </div>
         <div className="rounded-md h-40 w-40">
-          <Image className="rounded-full" src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1718150400&semt=ais_user" alt="sanskriti"></Image>
+        <Image
+        src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1718150400&semt=ais_user"
+        alt="Cute girl hacker"
+        width={500}  
+        height={400} 
+        className='rounded-full'
+      />
         </div>
       </div>
     );

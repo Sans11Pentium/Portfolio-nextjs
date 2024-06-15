@@ -5,7 +5,7 @@ const Projects = () => {
       <div id="projects" className="project flex justify-center flex-wrap">
         {/* Repeat the structure for each project item */}
         <div className="card w-96 bg-base-100 shadow-xl image-full m-2">
-          <figure><Image src="https://static.vecteezy.com/system/resources/previews/041/416/657/non_2x/hr-software-illustration-hand-drawn-composition-with-laptop-and-company-employees-human-resources-information-system-icon-career-management-concept-team-forming-business-network-vector.jpg" alt="Shoes" /></figure>
+          <figure><Image src="https://static.vecteezy.com/system/resources/previews/041/416/657/non_2x/hr-software-illustration-hand-drawn-composition-with-laptop-and-company-employees-human-resources-information-system-icon-career-management-concept-team-forming-business-network-vector.jpg" width={400} height={225} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">PIS DRDO</h2>
             <p>Full stack Personel Information System for office staff.</p>
@@ -15,7 +15,7 @@ const Projects = () => {
           </div>
         </div>
           <div className="card w-96 bg-base-100 shadow-xl image-full m-2">
-            <figure><Image src="https://img.freepik.com/free-photo/cartoon-style-character-traveling_23-2151129759.jpg" alt="Shoes" /></figure>
+            <figure><Image src="https://img.freepik.com/free-photo/cartoon-style-character-traveling_23-2151129759.jpg" alt="Shoes" width={400} height={225} /></figure>
             <div className="card-body">
               <h2 className="card-title">Wanderlust</h2>
               <p>Full stack Travelling website</p>
@@ -25,7 +25,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="card w-96 bg-base-100 shadow-xl image-full m-2">
-            <figure><Image src="https://media.istockphoto.com/id/1289754710/vector/web-scraping-isometric-web-banner-data-extraction-software-isometry-concept-process-of.jpg?s=612x612&w=0&k=20&c=adex03lGb5IRHeAL5PAmYMAkcX-MQJt9mTslAGcXhHo=" alt="Shoes" /></figure>
+            <figure><Image src="https://media.istockphoto.com/id/1289754710/vector/web-scraping-isometric-web-banner-data-extraction-software-isometry-concept-process-of.jpg?s=612x612&w=0&k=20&c=adex03lGb5IRHeAL5PAmYMAkcX-MQJt9mTslAGcXhHo=" width={400} height={225} alt="Shoes" /></figure>
             <div className="card-body">
               <h2 className="card-title">Flask web scrapper</h2>
               <p>Full stack Flask application</p>
@@ -36,7 +36,7 @@ const Projects = () => {
             </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl image-full m-2">
-          <figure><Image src="https://media.sproutsocial.com/uploads/2023/07/Sentiment-analysis-HUB-Final.jpg" alt="Shoes" /></figure>
+          <figure><Image src="https://media.sproutsocial.com/uploads/2023/07/Sentiment-analysis-HUB-Final.jpg" alt="Shoes" width={400} height={225} /></figure>
           <div className="card-body">
             <h2 className="card-title">Twitter US sentiment analysis</h2>
             <p>Analysis Twitter posts of US airline using NLP</p>
