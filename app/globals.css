@@ -4,9 +4,27 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: rgba(128, 128, 128, 0.066);
   overflow-x: hidden;
   width: 100vw;
+}
+
+main{
+  overflow-x: hidden;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
+
+.card{
+  background-color: rgb(50, 48, 48);
+  z-index: 1;
+}
+
+.contact{
+  background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+}
+
+.grid{
+  justify-items: center;
+  align-items: center;
 }
 
 @keyframes beat {
@@ -14,7 +32,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 }
   
@@ -26,28 +44,39 @@ body {
   display: none;
 }
 
-.skill-card p{
-  display: none;
+.skill-card:hover{
+  opacity: 0.9;
 }
 
-.skill-card {
-  cursor: pointer;
+.contact .card{
+  width: 70vw;
 }
-
-.skill-card:hover img {
-  opacity: 0.3;
-}
-
-.skill-card:hover p{
-  display: inline;
-}
-
 @media(max-width:500px){
   .nav-list{
     display: none;
   }
   .toggler{
     display: inline;
+  }
+  .intro{
+    flex-direction: column;
+    align-items: center;
+  }
+  .resume .card{
+    width:70vw;
+  }
+  .education .card{
+    width: 70vw;
+    margin-bottom: 1rem;
+  }
+  .indicator div{
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width:600px) {
+  .contact input{
+    font-size: smaller;
   }
 }
 
@@ -73,5 +102,35 @@ body {
   }
   .contact{
     padding:1rem;
+  }
+}
+
+@media(max-width:900px) {
+  .tech .container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media(max-width:760px) {
+  .tech .container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width:560px) {
+  .tech .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:520px) {
+  .tech .container div{
+    height: 8rem;
+  }
+  .tech{
+    padding:0rem;
+  }
+  .tech .container{
+    padding: 0.5rem;
   }
 }
