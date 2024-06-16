@@ -13,6 +13,8 @@ const nextConfig = {
         'static.vecteezy.com',
         'www.w3.org',
         'www.myperfectresume.com',
+        'data1.ibtimes.co.in',
+        'cdn-1.webcatalog.io',
     ], // Add the domain(s) of your external images here
     },
   };
