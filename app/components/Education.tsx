@@ -57,6 +57,7 @@ const Education = () => {
                             <li className="step step-primary">9.00</li>
                             <li className="step step-primary">9.60</li>
                             <li className="step step-primary">9.20</li>
+                            <li className="step step-primary">9.50</li>
                             </ul>
                         </div>
                     </div>
